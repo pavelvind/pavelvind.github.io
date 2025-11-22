@@ -23,6 +23,11 @@ header {
   text-align: center;
 }
 
+.container {
+  color: #fff;
+  padding: 1rem 5;
+}
+
 main {
   padding: 2rem;
 }
