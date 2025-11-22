@@ -1,6 +1,6 @@
 /* Basic CSS Reset */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Space Mono", monospace;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -36,7 +36,12 @@ header {
   top: 20px;
   align-self: flex-start;
   padding-left: 10.5rem;
+}
 
+.profile-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem;
 }
 
 .sidebar a {
