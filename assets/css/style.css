@@ -48,6 +48,21 @@ header {
   text-decoration: underline;
 }
 
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+}
+
+.social-links li {
+  margin-bottom: 0.75rem;
+}
+
+.social-links i {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
 main {
   padding: 2rem;
 }
