@@ -24,19 +24,22 @@ header {
   color: #fff;
   padding: 1rem 0;
   text-align: center;
-  border-bottom: 1px solid #fff;
 }
 
 .container {
   color: #d4d4d4;
-  padding: 1rem 5;
+  padding: 2rem 5rem;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
 }
 
 .sidebar {
   position: sticky;
   top: 20px;
   align-self: flex-start;
-  padding-left: 10.5rem;
+  width: 280px;
+  flex-shrink: 0;
 }
 
 .profile-name {
@@ -75,8 +78,19 @@ header {
   font-size: 1.1rem;
 }
 
-main {
-  padding: 2rem;
+.content {
+  flex: 1;
+  padding: 1rem 0;
+  min-width: 0;
+}
+
+.projects h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.projects p {
+  margin-bottom: 0;
 }
 
 footer {
@@ -90,5 +104,5 @@ footer {
 
 /* media query: mobile view */
 @media (max-width: 800px) {
-    
+
 }
