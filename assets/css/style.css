@@ -6,6 +6,9 @@ body {
   line-height: 1.6;
   background: #333;
   color: #d4d4d4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 /* profile photo */
 .avatar {
@@ -30,9 +33,11 @@ header {
   color: #d4d4d4;
   display: flex;
   align-items: flex-start;
+  gap: 3rem;
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 2rem;
+  flex: 1;
 }
 
 .sidebar {
@@ -120,11 +125,12 @@ header {
 
 footer {
   text-align: center;
-  padding: 0;
+  color: #444;
   background: #f4f4f4;
-  position: fixed;
-  bottom: 0;
   width: 100%;
+  position: static;
+  margin-top: auto;
+  padding: 0.5rem 0;
 }
 
 .project-img {
@@ -152,6 +158,7 @@ footer {
   .container {
     flex-direction: column;
     padding: 1;
+    gap: 1.5rem;
   }
   .project_title {
     padding: 0 rem;
