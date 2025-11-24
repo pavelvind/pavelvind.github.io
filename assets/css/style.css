@@ -94,6 +94,29 @@ header {
   margin-bottom: 0;
 }
 
+.project-card {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+
+.project-img {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
 footer {
   text-align: center;
   padding: 0;
