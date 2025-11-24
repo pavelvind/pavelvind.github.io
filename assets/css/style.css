@@ -150,11 +150,19 @@ footer {
 @media (max-width: 800px) {
   .container {
     flex-direction: column;
+    padding: 1;
+  }
+  .project_title {
+    padding: 0 rem;
+    padding: 0;
+    margin-left: 0;
+    font-family: "Space Mono", monospace;
+
   }
   .content {
     width: 100%;
     display: block;
-    padding: 0 1rem;
+    padding: 0;
   }
   .sidebar {
     width: 100%;
@@ -162,11 +170,20 @@ footer {
     margin-bottom: 2rem;
   }
   .project-card {
+    display: flex;
     flex-direction: column;
-    width: 100%;
+    padding: 1rem 1rem;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 1rem;
   }
   .project-img {
-    width: 100%;
-    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .social-links{
+    /*TODO: move down on top of the  footer i will add sonething after projects as well kepp it down
   }
 }
