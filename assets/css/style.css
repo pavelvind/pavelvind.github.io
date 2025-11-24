@@ -133,19 +133,40 @@ footer {
   border-radius: 8px;
 }
 .project-card {
-    display: flex;
-    gap: 1.5rem;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    border-radius: 10px;
-    background: rgba(255,255,255,0.05);
-    transition: 0.2s ease;
-  }
-  .project-card:hover {
-    background: rgba(255,255,255,0.08);
-    transform: translateY(-4px);
-  }
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: 0.2s ease;
+}
+.project-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-4px);
+}
 
 /* media query: mobile view */
 @media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .content {
+    width: 100%;
+    display: block;
+    padding: 0 1rem;
+  }
+  .sidebar {
+    width: 100%;
+    position: static;
+    margin-bottom: 2rem;
+  }
+  .project-card {
+    flex-direction: column;
+    width: 100%;
+  }
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
 }
