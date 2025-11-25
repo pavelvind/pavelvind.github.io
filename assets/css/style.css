@@ -111,6 +111,12 @@ footer {
   font-family: "Space Mono", monospace;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .projects p {
   margin-bottom: 0;
 }
@@ -158,6 +164,14 @@ footer {
   transform: translateY(-4px);
 }
 
+.Writings {
+  margin: 2rem 0 1rem;
+}
+
+.Writings + .project-card {
+  margin-top: 2.5rem;
+}
+
 /* media query: mobile view */
 @media (max-width: 800px) {
   .container {
@@ -192,6 +206,13 @@ footer {
     margin: 0 auto;
     box-sizing: border-box;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .Writings {
+    margin: 3rem 0 2rem;
+  }
+  .Writings + .project-card {
+    margin-top: 3rem;
   }
   .project-img {
     width: 90%;
