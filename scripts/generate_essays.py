@@ -1,8 +1,13 @@
 from pathlib import Path
 
-file = input("enter essay name")
+repo_root = Path(__file__).resolve().parents[1]
+essays_dir = repo_root / "content" / "essays"
+source_path = essays_dir / input("Enter source file name (include extension): ").strip()
 
-with open(file, encoding="utf-8") as f:
+if not source_path.is_file():
+    raise FileNotFoundError(f"Could not find {source_path.relative_to(repo_root)}")
+
+with source_path.open(encoding="utf-8") as f:
     title = f.readline().strip()
     date = f.readline().strip()
     essay = f.read()
@@ -27,7 +32,7 @@ html = f"""<!DOCTYPE html>
 </html>
 """
 
-output_dir = Path("content") / "essays"
+output_dir = essays_dir
 output_dir.mkdir(parents=True, exist_ok=True)
 output_path = output_dir / f"{title}.html"
 output_path.write_text(html, encoding="utf-8")
