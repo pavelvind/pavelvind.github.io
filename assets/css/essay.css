@@ -49,3 +49,27 @@ body {
 .date {
   color: gray;
 }
+
+@media (max-width: 800px) {
+  body {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .container {
+    padding: 24px 16px 40px;
+  }
+
+  .back-link {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  .essay {
+    text-align: left;
+    line-height: 1.6;
+    word-break: break-word;
+  }
+}
